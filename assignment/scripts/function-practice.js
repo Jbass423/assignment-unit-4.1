@@ -25,7 +25,7 @@ function helloName(Joshua) {
 
 // 3. Function to add two numbers together & return the result
 function addNumbers ( num0,num1 ){
-  console.log("addNumbers",  num0, num1)
+
 let  answer =  num0 + num1
 return answer; 
  
@@ -43,7 +43,7 @@ console.log("addNumbers", addNumbers (100,250) );
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1,num2,num3) {
-  console.log("numbers to use", num1,num2,num3);
+
   let answer = num1*num2*num3
   return answer;
 
@@ -53,21 +53,32 @@ console.log("the answer is: ", multiplyThree(5,5,5));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-function isPositive(number) {
+function isPositive(number=8) {
   if (number > 0) {
-    return;
-  }
-  return;
-}
+  console.log(number);
+    let answer;
+    return true
+  }else (number < 0 )
+  return false
+};
+ console.log(isPositive());
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast(array) {
 
-}
+
+function getLast ( [] ){
+  
+  if (getLast.length <= 0) {
+    getLast.pop
+    return ; 
+  } else {
+  }
+};
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
