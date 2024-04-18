@@ -6,7 +6,7 @@ console.log('***** Function Practice *****');
 
 // 1. Function to return 'Hello World!'
 function hello() {
-  console.log( "goodmorning", hello);
+  console.log("goodmorning", hello);
   return 'Hello World!';
 }
 // Call the function to test
@@ -15,8 +15,8 @@ console.log('Test - should say "Hello World!"');
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName(Joshua) { 
-  console.log("my name",  Joshua);
+function helloName(Joshua) {
+  console.log("my name", Joshua);
   return "Hello, Your Name!"
 }
 
@@ -24,45 +24,45 @@ function helloName(Joshua) {
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers ( num0,num1 ){
+function addNumbers(num0, num1) {
 
-let  answer =  num0 + num1
-return answer; 
- 
+  let answer = num0 + num1
+  return answer;
+
 };
 
-console.log("addNumbers", addNumbers (100,200) );
-console.log("addNumbers", addNumbers (100,250) );
-  
+console.log("addNumbers", addNumbers(100, 200));
+console.log("addNumbers", addNumbers(100, 250));
 
-  // return firstNumber + secondNumber;
+
+// return firstNumber + secondNumber;
 
 
 
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree(num1,num2,num3) {
+function multiplyThree(num1, num2, num3) {
 
-  let answer = num1*num2*num3
+  let answer = num1 * num2 * num3
   return answer;
 
 }
-console.log("the answer is: ", multiplyThree(5,5,5));
+console.log("the answer is: ", multiplyThree(5, 5, 5));
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-function isPositive(number=4) {
+function isPositive(number = 4) {
   console.log(number);
   if (number > 0) {
-  console.log("the number is true:" );
-     return true
-  }else (number < 0 ) 
+    console.log("the number is true:");
+    return true
+  } else (number < 0)
   return false
- 
+
 };
- 
+
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -70,23 +70,44 @@ function isPositive(number=4) {
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-let movies = []
-console.log( movies);
+let movies = [1, 2, 3, 4]
+movies.pop()
 
 
 
-function getLast (  ){
-  
-  if (movies.length === 0) {
-    movies.pop(getLast)
-    return ; 
-  } else {
+
+console.log(movies);
+
+function getLast(putBack) {
+  console.log("get last:", putBack);
+  if (movies.length === 3) {
+    return movies.push(4);
+
   }
 };
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
+let numbers = ["one", "two", "three", "four"]
+let winningNumber = "two"
+console.log( winningNumber);
+
+function find(findit) {
+  console.log(findit);
+  for (i=0; i<numbers.length; i++){
+    console.log(numbers[ i ]);
+   if (numbers[ i ] === winningNumber)
+    console.log("found it");}
+  return true ;
+
+};
+
+
+
+
+
 
 
 // ----------------------
