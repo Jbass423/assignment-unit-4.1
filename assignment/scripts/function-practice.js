@@ -90,23 +90,25 @@ function getLast(putBack) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-let numbers = ["one", "two", "three", "four"]
-let winningNumber = "two"
-console.log( winningNumber);
+let numbers = [1, 2, 3, 4]
 
-function find(findit) {
-  console.log(findit);
-  for (i=0; i<numbers.length; i++){
-    console.log(numbers[ i ]);
-   if (numbers[ i ] === winningNumber)
-    console.log("found it");}
-  return true ;
+console.log(numbers)
+
+function find() {
+  for (let i = 0; i < numbers.length; i++) {
+    console.log("for loop");
+  }
+
+  if (numbers === 4) {
+    console.log("found it ");
+    return true
+  } else {
+    return false
+
+  }
+
 
 };
-
-
-
-
 
 
 
